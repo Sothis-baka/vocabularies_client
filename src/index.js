@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ApolloProvider, createHttpLink, ApolloClient, InMemoryCache } from "@apollo/client";
+import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 
 import App from "./App";
 
 const client = new ApolloClient({
-    link: "localhost:4000",
+    uri: "https://vocabularies-server.herokuapp.com/",
     cache: new InMemoryCache()
 })
 

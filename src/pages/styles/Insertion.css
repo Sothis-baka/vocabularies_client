@@ -1,0 +1,105 @@
+#formWrapper{
+    position: relative;
+
+    padding: 2em;
+    border-radius: 8px;
+
+    color: aliceblue;
+    background-color: rgba(47, 53, 66, 0.8);
+}
+
+#formWrapper label{
+    display: block;
+
+    font-size: 1.2em;
+    margin-bottom: 0.2em;
+}
+
+#formWrapper input, #formWrapper textarea{
+    display: block;
+
+    width: 12em;
+
+    border-radius: 4px;
+    border: none;
+    padding: 0.4em;
+    outline: none;
+
+    font-size: 1.4em;
+
+    background-color: #a4b0be;
+}
+
+#formWrapper textarea{
+    height: 4em;
+
+    resize: none;
+}
+
+#formWrapper textarea::placeholder{
+    font-size: 0.6em;
+}
+
+#formWrapper input[type='submit']{
+    width: 6em;
+
+    margin-top: 1em;
+    padding: 0.6em;
+
+    color: aliceblue;
+    background-color: #ff4757;
+    box-shadow: 0 0 1px 2px #ff6b81;
+}
+
+#formWrapper input[type='submit']:hover{
+    opacity: 0.9;
+    box-shadow: 0 0 1px 1px #ff6b81 inset;
+
+    cursor: pointer;
+}
+
+#formWrapper .inputLine{
+    margin: 1em;
+}
+
+#formWrapper button{
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 0.4em;
+
+    color: aliceblue;
+    background-color: #70a1ff;
+}
+
+#formWrapper button:hover{
+    background-color: #1e90ff;
+
+    cursor: pointer;
+}
+
+#formWrapper p{
+    margin-left: 1em;
+}
+
+#inputForm1{
+
+}
+
+@media only screen and (max-width: 768px) {
+    #formWrapper{
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #formWrapper{
+        font-size: 0.8em;
+    }
+}
+

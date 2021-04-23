@@ -1,0 +1,140 @@
+#listWrapper{
+    text-align: center;
+
+    width: 36em;
+}
+
+#listWrapper div{
+    margin-bottom: 1em;
+}
+
+#listWrapper .word{
+    font-size: 4em;
+}
+
+#listWrapper .description{
+    font-size: 2em;
+}
+
+#listWrapper #btnGroup{
+    display: flex;
+    flex-direction: row;
+}
+
+#listWrapper #btnGroup button{
+    border: none;
+    outline: none;
+
+    padding: 1em;
+    background-color: transparent;
+}
+
+#listWrapper #btnGroup svg{
+    height: 4em;
+
+    margin: 1em;
+
+    cursor: pointer;
+}
+
+#listWrapper #btnGroup svg:hover{
+    transform: translateY(-1px);
+}
+
+.quitBtn a{
+    color: #ff6b81;
+}
+
+@keyframes quitBtnHovered {
+    from    { color: #ff6b81; }
+    to  { color: #ff4757; }
+}
+
+.quitBtn a:hover{
+    color: #ff4757;
+    animation: quitBtnHovered 0.6s linear;
+}
+
+.questionBtn{
+    margin-left: auto;
+}
+
+.questionBtn a{
+    color: #70a1ff;
+}
+
+@keyframes questionBtnHovered {
+    from    { color: #70a1ff; }
+    to  { color: #1e90ff; }
+}
+
+.questionBtn a:hover{
+    color: #1e90ff;
+    animation: questionBtnHovered 0.6s linear;
+}
+
+.checkBtn{
+    color: #7bed9f;
+}
+
+@keyframes checkBtnChecked {
+    from    { color: #7bed9f; }
+    to  { color: #2ed573; }
+}
+
+.checkBtn:hover{
+    color: #2ed573;
+    animation: checkBtnChecked 0.6s linear;
+}
+
+#done{
+    padding-bottom: 1em;
+    border-radius: 4px;
+    background-color: rgba(164, 176, 190, 0.2);
+
+    font-size: 2em;
+    text-align: center;
+}
+
+#done p{
+    margin: 1em;
+}
+
+#done a{
+    color: #70a1ff;
+    text-decoration: none;
+}
+
+#done a:hover{
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    #listWrapper, #done{
+        font-size: 0.8em;
+    }
+
+    #done{
+        font-size: 1.6em;
+    }
+
+    #listWrapper #btnGroup{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #listWrapper{
+        font-size: 0.54em;
+    }
+
+    #done{
+        font-size: 1em;
+    }
+
+    #listWrapper #btnGroup svg{
+        margin: 0.2em;
+    }
+}

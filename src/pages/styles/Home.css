@@ -1,0 +1,116 @@
+#searchBar{
+    margin: 2em 1em;
+    text-align: center;
+}
+
+#searchBar svg{
+    width: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#searchBar input{
+    padding: 0.2em 0.2em 0.2em 0.4em;
+
+    border: 1px solid #a4b0be;
+    border-radius: 4px;
+    outline: none;
+
+    font-size: 1.2em;
+}
+
+#searchBar input:focus{
+    background-color: aliceblue;
+}
+
+.backBtn{
+    position: absolute;
+
+    top: 1em;
+    left: 2em;
+}
+
+.backBtn svg{
+    width: 2em;
+    cursor: pointer;
+}
+
+#books{
+    text-align: center;
+}
+
+#bookCovers{
+    max-width: 40em;
+}
+
+.bookCover{
+    display: inline-flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 6em;
+    height: 8em;
+
+    margin: 1em;
+
+    border-left: 4px solid #636e72;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 2px 1px #a4b0be;
+}
+
+.bookCover p{
+    margin-bottom: 1em;
+
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.bookCover:hover{
+    cursor: pointer;
+
+    transform: translateY(-0.1em) scale(1.05);
+
+    box-shadow: 0 0 0 1px #a4b0be inset;
+}
+
+#listCovers{
+    max-width: 40em;
+}
+
+#lists{
+    margin-top: 4em;
+}
+
+.listCover{
+    display: inline-flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 3em;
+    width: 6em;
+
+    margin: 1em;
+    padding: 1em;
+    border-radius: 8px;
+
+    color: aliceblue;
+    background-color: #57606f;
+
+    text-decoration: none;
+}
+
+.listCover:hover{
+    opacity: 0.98;
+}
+
+.listCover p{
+    font-size: 1.6em;
+}
+
+.listCover:hover p{
+    transform: translateY(-0.05em) scale(1.02);
+}
