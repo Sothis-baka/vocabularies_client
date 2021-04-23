@@ -14,7 +14,8 @@ const Insertion = () => {
     });
 
     const [form2State, setForm2State] = useState({
-
+        bookTitle: '',
+        content: ''
     });
 
     const [successState, setSuccessState] = useState(0);
@@ -147,7 +148,7 @@ const Insertion = () => {
                             </div>
                             <div className='inputLine'>
                                 <label>Content</label>
-                                <textarea name='content' onChange={form2HandleChange} placeholder=
+                                <textarea name='content' value={form2State.content} onChange={form2HandleChange} placeholder=
                                     {`Format:\r\n(word),(description);\r\nExample input:\r\nhello, an expression of greeting;\r\nworld, the planet we live on;`} required={true}/>
                             </div>
                             <div className='inputLine'>
